@@ -1,0 +1,32 @@
+- var history = [{'year': 1919, 'month': 'Jan'},{'year': 1951, 'month': 'Feb'},{'year': 1980, 'month': 'Mar'},{'year': 1984, 'month': 'Apr'},{'year': 1989, 'month': 'May'},{'year': 1992, 'month': 'Jun'},{'year': 1997, 'month': 'Jul'},{'year': 2000, 'month': 'Aug'},{'year': 2008, 'month': 'Sep'},{'year': 2011, 'month': 'Oct'},{'year': 2014, 'month': 'Nov'},{'year': 2017, 'month': 'Dec'}];
+section
+    .container
+        .row.wow.fadeInLeft.animated(data-wow-delay="0.5s")
+            .col-12
+                h1.page-title__name.decor-line
+                    span.wow.fadeInLeft.animated(data-wow-delay="0.5s") Our History
+        .row.wow.fadeInUp.animated(data-wow-delay="0.5s")
+            .col-12
+                ul.history-dots.owl-dots(id="history-dots")
+                    for name in history
+                        li.history-dots__item
+                            a(href="#")
+                                span.history-dots__year= name.year
+                                span.history-dots__month= name.month
+
+                .owl-carousel.owl-theme.history-carousel(id="history")
+                    for name in history
+                        div.row
+                            .col-5.history-carousel__img
+                                img(src="assets/images/content/history-slider/img-1.jpg")
+                            .col-7.history-carousel__content
+                                .history-carousel__year= name.year
+                                .history-carousel__text
+                                    span.decor-1
+                                    span.decor-2
+                                    p.
+                                        CTM is a film laboratory under the
+                                        name of "Cinema Tirage Maurice".
+                                        CTM manufactures its own
+                                        processing machines. The lab was
+                                        sold in the 70's.

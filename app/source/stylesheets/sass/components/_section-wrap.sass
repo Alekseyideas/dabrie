@@ -1,0 +1,149 @@
+.production
+  padding-top: 7px
+.section-wrap
+  margin-top: 45px
+  background: url("../images/content/production-bg.jpg") no-repeat center / 100%
+  &--bg2
+    background: url("../images/content/production-bg2.jpg") no-repeat center / 100%
+  &__img
+    width: 100%
+    position: relative
+    z-index: 1
+
+    img
+      width: 100%
+      max-width: 677px
+
+  &__description
+    max-width: 305px
+    margin: -15px auto 0 100px
+    font-size: 18px
+    line-height: 26px
+    font-weight: 600
+    &--textTable
+      margin-top: -75px
+    &--text
+      position: relative
+  &__plusLine
+      &:after
+        content: '+'
+        display: block
+        color: $red
+        font-weight: 300
+        font-size: 30px
+        position: absolute
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        height: 1px
+        background: $red
+      &--centerRight
+        &:after
+          right: -55px
+          top: 50%
+          margin-top: -3px
+        &:before
+          width: 1000px
+          left: 100%
+          top: 50%
+          margin-top: 10px
+          margin-left: 92px
+      &--bottomRight
+        &:after
+          right: -55px
+          bottom: -22px
+          margin-top: -3px
+        &:before
+          width: 1000px
+          left: 100%
+          bottom: -10px
+          margin-top: 10px
+          margin-left: 92px
+      &--topLeft
+        &:after
+          left: -55px
+          top: 0
+          margin-top: -3px
+        &:before
+          width: 300px
+          right: 100%
+          margin-top: 10px
+          margin-right: 92px
+
+
+.prTabs
+  margin-top: 47px
+  padding-bottom: 39px
+.prTab
+  cursor: pointer
+  margin-bottom: 35px
+  &__img
+    width: 100px
+    height: 100px
+    overflow: hidden
+    border-radius: 50%
+    margin-right: 30px
+  &__text
+    font-size: 26px
+    font-family: $gilroy
+    max-width: 230px
+    line-height: 32px
+    margin-top: -2px
+    color: $theme-color
+    transition: .2s
+  &__btn
+    position: relative
+    min-height: 200px
+    &:hover
+      .prTab__text
+        color: $red
+      &:after
+        color: white
+        background: $red
+    &:after
+      content: '+'
+      transition: .2s
+      display: block
+      color: $red
+      background: #f2f8fa
+      width: 28px
+      height: 28px
+      border-radius: 50%
+      text-align: center
+      line-height: 28px
+      font-size: 26px
+      margin-top: 38px
+      font-weight: 300
+      position: absolute
+      bottom: 0
+  &__height
+    min-height: 167px
+  &__content
+    margin: 22px 0 -16px 0
+    font-size: 14px
+    line-height: 26px
+    color: $theme-color
+    max-width: 337px
+    display: none
+
+  &--active
+    .prTab__btn
+      &:after
+        content: '-'
+        color: #f2f8fa
+        background: $red
+        line-height: 18px
+        font-size: 46px
+
+
+
+@media only screen and (max-width : 768px)
+  .prTab
+    max-width: 400px
+    margin: 0 auto 35px
+@media only screen and (max-width : 1200px)
+  .prTab
+    &__text
+      font-size: 20px
+      line-height: 26px

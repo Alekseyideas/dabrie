@@ -1,0 +1,15 @@
+- var tabs = [{'name': 'North America', 'tab': 'north-america', 'class': 'active'},{'name': 'Africa / Middle East', 'tab': 'afrika', 'class': ''},{'name': 'Asia / Pacific', 'tab': 'asia', 'class': ''},{'name': 'Malaysia', 'tab': 'malaysia', 'class': ''},{'name': 'Japan', 'tab': 'japan', 'class': ''},{'name': 'Australia', 'tab': 'australia', 'class': ''}];
+
+section.worldwide-presence(id="partners" data-seotitle="Worldwide Presence" data-seourl="partners.html" data-seodescription="Worldwide Presence" data-seokeywords="Worldwide Presence")
+    .container
+        .row
+
+
+            .col-7.wow.fadeInUp.animated(data-wow-delay="0.5s")
+                .worldwide-presence__tab-content
+                    for item in tabs
+                        .worldwide-presence__tab-item.tab-content(id=item.tab class=item.class)
+
+                            .row
+                                .col-12
+                                    .tab-content__map(id=item.tab+"-map")

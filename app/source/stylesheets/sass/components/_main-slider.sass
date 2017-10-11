@@ -1,0 +1,93 @@
+.main-slider
+	color: $white
+	h2
+		font-family: $gilroy
+		font-size: 50px
+		text-align: left
+		margin-top: 266px
+		padding-left: 152px
+		line-height: 50px
+		@media screen and (max-width: 1200px)
+			margin-top: 80px
+			padding-left: 15px
+	p
+		padding-left: 152px
+		max-width: 470px
+		font-size: 18px
+		text-align: left
+		margin-top: 37px
+		line-height: 29px
+		@media screen and (max-width: 1200px)
+			padding-left: 15px
+			margin-top: 30px
+	.container
+		position: relative
+		z-index: 10
+	.owl-carousel .owl-item
+		min-height: 620px
+		padding-bottom: 50px
+		box-sizing: border-box
+		@media screen and (max-width: 1200px)
+			min-height: 405px
+	.owl-dots
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 10px
+	.owl-nav
+		position: absolute
+		height: 1px
+		top: 49%
+		width: 100%
+		//max-width: 1200px
+		margin: 0 auto
+		left: 0
+		right: 0
+		z-index: 1000
+		> div
+			position: absolute
+			width: 50px
+			height: 50px
+			+border-radius(50px)
+			background: rgba(0, 0, 0, 0.15)
+			cursor: pointer
+			&:after
+				content: ''
+				position: absolute
+				width: 12px
+				height: 17px
+				background: url("../images/icons/arrow.svg")
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				margin: auto
+		.owl-prev
+			left: 15px
+			&:after
+				+rotate(180)
+		.owl-next
+			right: 15px
+	.anim-slide__bgr
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			//background-image: -moz-linear-gradient( 40deg, rgb(26,107,167) 0%, rgb(27,170,225) 100%)
+			//background-image: -webkit-linear-gradient( 40deg, rgb(26,107,167) 0%, rgb(27,170,225) 100%)
+			//background-image: -ms-linear-gradient( 40deg, rgb(26,107,167) 0%, rgb(27,170,225) 100%)
+			opacity: 0.6
+
+
+
+.animate-out
+	-webkit-animation-delay : 0ms
+	animation-delay : 0ms

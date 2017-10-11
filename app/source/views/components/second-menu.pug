@@ -1,0 +1,15 @@
+- var menu_items = [{'link': 'Our production', 'anchor': 'production'},{'link': 'References', 'anchor': 'references'},{'link': 'Events', 'anchor': 'events'},{'link': 'Team', 'anchor': 'team'},{'link': 'Contact us', 'anchor': 'contact-us'}];
+
+
+.second-menu
+    .container
+        .second-menu__logo
+            a(href="#")
+                img.default-logo(src="assets/images/icons/logo.png")
+                img.scroll-logo(src="assets/images/icons/logo2.png")
+        ul.second-menu__container
+            for name in menu_items
+                li.second-menu__item
+                    a(href='#'+name.anchor)= name.link
+        .second-menu__phone
+            a(href="tel:+33140857200") +33 1 40 85 72 00

@@ -1,0 +1,66 @@
+.video-block
+	height: 645px
+	position: relative
+	background: url("../images/content/video-block/bg.jpg") no-repeat center / cover
+	margin-top: 91px
+	#video-bgr
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+
+	&__title
+		color: $white
+		font-size: 50px
+		font-family: $gilroy
+		margin-top: 100px
+		line-height: 40px
+		padding-left: 100px
+
+	&__logo-list
+		margin-top: 145px
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	.buttonBar
+		display: none
+
+.event
+	text-align: center
+	width: 95%
+	margin-top: 65px
+
+	&__logo
+		img
+			margin: auto
+	&__title
+		color: $red
+		background: white
+		width: 144px
+		padding: 11px 0
+		border-radius:  22.5px
+		font-size: 26px
+		font-family: $gilroy
+		text-transform: uppercase
+		margin: 10px auto 29px
+	&__text
+		font-size: 18px
+		line-height: 35px
+		max-width: 368px
+		margin: auto
+		font-weight: 600
+		color: white
+
+.event2
+	width: 100%
+
+
+
+@media only screen and (max-width : 768px)
+	.video-block
+		height: auto
+		padding-bottom: 30px
+	.event
+		width: 100%

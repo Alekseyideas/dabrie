@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 130 145" style="enable-background:new 0 0 130 145;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Filter_0);}
+	.st1{fill:#B82025;stroke:#FFFFFF;stroke-width:3;}
+</style>
+<filter  filterUnits="userSpaceOnUse" height="142px" id="Filter_0" width="127px" x="1.5px" y="1.5px">
+	<feOffset  dx="0" dy="22" in="SourceAlpha"></feOffset>
+	<feGaussianBlur  result="blurOut" stdDeviation="6.557"></feGaussianBlur>
+	<feFlood  flood-color="rgb(0, 0, 0)" result="floodOut"></feFlood>
+	<feComposite  in="floodOut" in2="blurOut" operator="atop"></feComposite>
+	<feComponentTransfer>
+		<feFuncA  slope="0.85" type="linear"></feFuncA>
+	</feComponentTransfer>
+	<feMerge>
+		<feMergeNode></feMergeNode>
+		<feMergeNode  in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<g class="st0">
+	<path class="st1" d="M64.5,21.5c-11.6,0-21,9.4-21,20.9c0,3.1,0.7,6.1,2,8.9c0.4,0.9,0.9,1.7,1.4,2.5l16,23.9
+		c0.6,0.9,1.8,1.1,2.6,0.5c0.2-0.1,0.4-0.3,0.5-0.5l15.9-23.7c6.4-9.6,3.9-22.5-5.7-28.9C72.7,22.7,68.7,21.5,64.5,21.5z M64.5,52.5
+		c-5.6,0-10.1-4.5-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1s10.1,4.5,10.1,10.1l0,0C74.6,47.9,70.1,52.5,64.5,52.5z"/>
+</g>
+</svg>

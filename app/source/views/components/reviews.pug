@@ -1,0 +1,42 @@
+section.reviews.wow.fadeInUp.animated(data-wow-delay="0.5s")
+    .reviews__title
+        .container
+            .row
+                .col-12
+                    h2 What our clients say
+    .reviews-slider.owl-carousel.owl-theme(id="reviews-slider")
+        - for (var i=1; i<=3; i++) {
+            div.reviews-slider__item
+                .container
+                    .row
+                        .col-5
+                            .reviews__photo
+                                .reviews__decor
+                                img(src='assets/images/content/reviews/1.jpg')
+                        .col-7
+                            .reviews-content
+                                .reviews-content__name Luc Tharin
+                                .reviews-content__category C.E.O.
+                                .reviews-content__text.
+                                    2016 was a significant year for our company; we invested in innovation in order
+                                    to upgrade our different studios. It was necessary to homogenize various
+                                    workstations to attempt a higher level of productivity through installation
+                                    of a centralized storage system with collaborative workflow. We've been working
+                                    on this type of solution with CTM for several years. It is essential to have a
+                                    partner like CTM Solutions who has profound engineering skills, can give valuable
+                                    advices and capable of making the installation without interruption of service.
+                                    Moreover, we appreciate working with CTM because that way we have one supplier
+                                    managing every stage of the project
+
+        - }
+
+    .reviews-slider-controls
+        .reviews-slider-controls__prev
+            a(href="#")
+        .reviews-slider-dots(id="reviews-slider-dots")
+            - for (var i=1; i<=3; i++) {
+                a.reviews-slider-dots__item(href='#' data-target= i - 1)
+            - }
+
+        .reviews-slider-controls__next
+            a(href="#")

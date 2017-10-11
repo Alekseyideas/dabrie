@@ -1,0 +1,26 @@
+header.header
+    .header-menu
+        .container
+            .row
+                .col-12
+                    - var menu_items = ["CTM Group", "CTM Audio", "CTM Solutions", "CTM Location", "Debrie", "Ninsight"];
+                    ul
+                        li
+                            .burger
+                                a(href='#')
+                                    span.burger__text Menu
+                                span.burger__circle
+                                    span.burger__line
+                                span.burger__mobile
+                        for name in menu_items
+                            if(name == 'Debrie')
+                                li.header-menu__item.active
+                                    a(href='#')= name
+                            else
+                                li.header-menu__item
+                                    a(href='#')= name
+                        li.select-language
+                            a.select-language__en(href='#') en
+
+
+include ../components/second-menu

@@ -1,0 +1,46 @@
+section.contacts-us(id='contact-us' data-seotitle="Contact us" data-seourl="contact-us.html" data-seodescription="Contact us" data-seokeywords="Contact us")
+    .contacts-us__decor-text CON
+    .container
+        .row
+            .col-12
+                h2.contacts-us__title.decor-line
+                    span.wow.fadeInLeft.animated(data-wow-delay="0.5s") Contact us
+
+        .row.wow.fadeInUp.animated(data-wow-delay="0.5s")
+            .col-3
+                .contacts-us__follow
+                    ul.follow-us
+                        li.follow-us__instagram
+                            a(href='#')
+                        li.follow-us__facebook
+                            a(href='#')
+                        li.follow-us__twitter
+                            a(href='#')
+
+            .col-3
+                .contacts-us__contacts
+                    ul(itemscope itemtype="http://schema.org/Organization")
+                        span(itemprop="name" style='display:none') CTM Group
+                        li(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+                            p.contacts-us__name Adress
+                            p.contacts-us__text(itemprop="streetAddress")
+                                span(itemprop="addressLocality") 125 avenue Louis Roche <br>
+                                span(itemprop="postalCode") 92230 Gennevilliers <br>
+                                span(itemprop="addressLocality") France
+                        li
+                            p.contacts-us__name E-mail
+                            p.contacts-us__text(itemprop="email").
+                                info@ctmgroup.fr
+                        li
+                            p.contacts-us__name Phone
+                            p.contacts-us__text(itemprop="telephone").
+                                +33 1 40 85 72 00
+
+            .col-6
+                .contacts-us__form
+                    p.contacts-us__name Contact form
+                    form
+                        input.form-input(name="name" type="text" placeholder='NAME')
+                        input.form-input(name="phone" type="text" placeholder='PHONE')
+                        input.form-input(name="email" type="text" placeholder='E-MAIL')
+                        input.form-button(name="submit" type="submit" value='Send Message')

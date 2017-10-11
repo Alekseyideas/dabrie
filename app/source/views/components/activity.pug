@@ -1,0 +1,29 @@
+section.activity(id="activities" data-seotitle="Activity" data-seourl="activities.html" data-seodescription="Activity" data-seokeywords="Activity")
+    .container
+        .row
+            .col-12.wow.fadeInLeft.animated(data-wow-delay="0.5s")
+                h2.activity__title.decor-line
+                    span.wow.fadeInLeft.animated(data-wow-delay="0.5s") Activity
+
+        .row.wow.fadeInUp.animated(data-wow-delay="0.5s")
+            .col-5
+                .activity__left
+                    h2.activity__section-title Our main goal
+                    p.activity__section-text.
+                        Client satisfaction is our highest priority. Through
+                        daily conversation and collaboration with the team,
+                        we convey information, maintain control and drive
+                        progress for better results.
+                    a.activity__btn(href='#')
+            .col-7
+                .activity__rigth
+                    h2.activity__section-title Our main partners
+                    .partners__wrap
+                        .partners__decor
+                        ul.partners
+                            - for (var i=1; i<=10; i++) {
+                                li.partners__items
+                                    img(src="assets/images/content/partners/"+i+".png")
+                                    i
+                            - }
+

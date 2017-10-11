@@ -1,0 +1,49 @@
+.sites-list
+	&:nth-child(2n)
+		background-color: #f2f8fa
+	&__photo
+		width: 100%
+		height: auto
+		max-width: 470px
+
+	&__item
+		padding-top: 0
+		padding-left: 50px
+		padding-bottom: 100px
+		@media screen and (max-width: 768px)
+			padding-bottom: 40px
+			padding-top: 40px
+
+	&__title
+		font-family: $gilroy
+		font-size: 26px
+		color: #005696
+
+
+	&__description
+		color: $menu-bgr
+		line-height: 26px
+		max-width: 569.41px
+		font-weight: 600
+		font-size: 14px
+		display: flex
+		margin-top: -8px
+		&:before
+			content: '+'
+			color: $red
+			font-size: 25px
+			font-family: $default-f
+			margin: 0 40px 0 16px
+			font-weight: 300
+	&__subTitle
+		color: $red
+		font-size: 34px
+		line-height: 60px
+
+
+
+@media only screen and (max-width : 768px)
+	.sites-list
+		&__photo
+			width: 100%
+			margin: 0 auto 40px

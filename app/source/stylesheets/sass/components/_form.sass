@@ -1,0 +1,47 @@
+.form-input
+	display: block
+	width: 100%
+	border: none
+	border-bottom: 2px solid #d9dcdd
+	height: 50px
+	margin-bottom: 8px
+	color: #263238
+	font-weight: 700
+	font-size: 14px
+	text-transform: uppercase
+	&::-webkit-input-placeholder
+		color: #d9dcdd
+	&:hover
+		border-bottom-color: #b2b2b2
+	&:focus
+		border-bottom-color: #005696
+
+	&.wpcf7-not-valid
+		border-bottom-color: #e53935
+		background: url("../images/icons/warning.svg") no-repeat center right !important
+
+.wpcf7-not-valid-tip
+	display: none!important
+
+.ajax-loader, .wpcf7-response-output
+	display: none!important
+
+.submit_message
+	display: none
+	padding-top: 20px
+	padding-bottom: 20px
+
+.form-button
+	color: $white
+	background-color: $red
+	height: 50px
+	+border-radius(50px)
+	max-width: 270px
+	width: 100%
+	border: none
+	cursor: pointer
+	margin-top: 32px
+	font-weight: 700
+	font-size: 16px
+	&:hover
+		background: darken($red,10)

@@ -1,0 +1,134 @@
+.header
+	&-menu
+		font-size: 0
+		background-color: $menu-bgr
+		li
+			font-size: 14px
+			display: inline-block
+			a
+				color: $menu-color
+				display: block
+				padding: 15px 18px
+				margin-right: 11px
+				&:hover, .active
+					background-color: $menu-item-hover
+
+			&.active
+				a
+					background-color: $menu-item-hover
+
+
+			&.select-language
+				float: right
+				a
+					text-transform: uppercase
+					position: relative
+					padding: 0 0 0 30px
+					margin-top: 15px
+					margin-right: 0
+					&:after
+						content: ''
+						width: 20px
+						height: 20px
+						position: absolute
+						top: 0
+						bottom: 0
+						left: 0
+						margin: auto
+						background: url("../images/icons/en.png")no-repeat
+					&:hover
+						background-color: transparent
+			.language-chooser
+				> li
+					display: block
+					&.active
+						display: none
+					&.lang-fr
+						a
+							&:after
+								background: url("../images/icons/fr.png")no-repeat
+					a
+						background-color: transparent!important
+
+		&__item
+			@media screen and (max-width: 1200px)
+				display: none!important
+
+
+		.burger
+			color: $menu-color
+			font-size: 14px
+			position: relative
+
+			a
+				padding-left: 34px
+				margin-right: 0
+				@media screen and (max-width: 1200px)
+					padding-left: 38px
+				&:hover
+					background-color: transparent
+			&__text
+				text-transform: uppercase
+				margin-left: 8px
+				margin-right: 32px
+			&__circle
+				background: white
+				display: block
+				width: 28px
+				height: 28px
+				position: absolute
+				left: 0
+				top: 11px
+				border-radius: 50%
+			&__line
+				display: block
+				position: absolute
+				width: 12px
+				height: 2px
+				background-color: $menu-item-hover
+				left: 50%
+				top: 50%
+				bottom: 0
+				margin: -1px 0 0 -6px
+				@media screen and (max-width: 1200px)
+					width: 28px
+					height: 28px
+					background: url("../images/icons/burger.svg") center center #fff no-repeat
+					+border-radius(50%)
+
+				&:after, &:before
+					content: ''
+					position: absolute
+					width: 12px
+					height: 2px
+					background-color: $menu-item-hover
+					left: 0
+					+transition(0.4s)
+					@media screen and (max-width: 1200px)
+						content: none
+				&:after
+					top: -5px
+				&:before
+					top: 5px
+
+			&.show
+				.burger
+					&__line
+						background: transparent
+						&:after
+							+rotate(45)
+							top: 0
+						&:before
+							+rotate(-45)
+							top: 0
+
+
+
+
+
+@media only screen and (max-width : 768px)
+	.header
+		.burger
+			&__line
+				left: 6px
+				top: 2px

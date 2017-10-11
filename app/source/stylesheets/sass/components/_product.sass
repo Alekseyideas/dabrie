@@ -1,0 +1,46 @@
+
+.product
+  margin-bottom: 42px
+  &__img
+    width: 100%
+    border: 1px solid #d9dcdd
+    max-width: 370px
+    img
+      width: 100%
+      height: auto
+      display: block
+      margin: auto
+
+  &__title
+    color: $red
+    font-family: $gilroy
+    font-size: 26px
+    margin-top: 40px
+    &--sec
+      text-transform: uppercase
+      color: $theme-color
+      margin-top: 15px
+  &__description
+    margin-top: 22px
+    font-size: 14px
+    max-width: 280px
+    ul
+      li
+        margin-bottom: 4px
+        &:before
+          float: left
+          content: ''
+          display: block
+          width: 4px
+          height: 4px
+          border-radius: 50%
+          background: $theme-color
+          margin-right: 4px
+          margin-left: 2px
+          margin-top: 8px
+
+
+@media only screen and (max-width : 768px)
+  .product
+    max-width: 370px
+    margin: 20px auto 40px
